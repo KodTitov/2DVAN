@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+body{
+  background-color: #fbfbfb;
+}
+
+.list-group-item {
+  background-color: #FBFBFB !important;
+}
+

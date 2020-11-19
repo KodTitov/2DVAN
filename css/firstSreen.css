@@ -1,0 +1,67 @@
+.view{
+    background-image: url(/img/urBanner1.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+}
+
+html,
+body,
+header,
+.view {
+  height: 98%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.bannerText{
+  margin-bottom: 30px;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 65px;
+}
+
+.btnBannerReg{
+  margin-right: 15px;
+}
+
+.logRegBanner{
+  padding-top: 30%;
+}
+
+@media screen  and (max-width: 1424px) {
+  .logRegBanner{
+    padding-top: 18%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .logRegBanner{
+    padding-top: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logRegBanner{
+    padding-top: 50%;
+  }
+
+  .bannerText{
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 50px;
+  }
+  
+  .btnBannerReg{
+    margin-right: 15px;
+  }
+}
+

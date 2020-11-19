@@ -1,0 +1,70 @@
+.mainTextBackground{
+    background: #fbfbfb;
+}
+  
+.titleTextMain{
+  color:#4c4d4d;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 45px;
+}
+  
+.textMain{
+  color:#4c4d4d;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.warrantyTextTitle{
+  color:#4c4d4d;
+  margin-top:15px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+}
+
+.warrantyText{
+  font-family: 'Roboto', sans-serif;
+  color:#4c4d4d;
+}
+
+.warrantyIco{
+  font-size: 40px;
+}
+
+
+.fixImgBack {
+    display: block;
+    background-image: url('/img/urBanner2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.icoVer{
+  color:#00680C;
+}
+
+.icoSupp{
+  color:#0068AF;
+}
+
+.icoWarr{
+  color:black;
+}
+
+.rBox{
+  border-radius: 55px 18px 18px 18px;
+  -moz-border-radius: 55px 18px 18px 18px;
+  -webkit-border-radius: 55px 18px 18px 18px;
+  border: 1px solid #000000;
+  background-color: #F0F0F0;
+  color:#4c4d4d;
+  padding: 15px;
+  padding-top: 35px;
+  padding-bottom: -10px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: 'Roboto', sans-serif;
+}

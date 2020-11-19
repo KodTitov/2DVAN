@@ -1,0 +1,24 @@
+.textNavBar{
+    display: inline-block;
+    color:white !important; 
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textNavBar:after {
+    background-color: white;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.textNavBar:hover:after,
+.textNavBar:focus:after {
+    width: 100%;
+}
