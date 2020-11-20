@@ -50,7 +50,7 @@
             <div class="col-12 logRegBanner">
               <h4 class="bannerText wow fadeInDown"><span style="font-size: 60px;">2DVAN</span><br>найдем клиентов/мастеров быстро и качественно для вас</h4>
               <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown open-popup-client">Найти мастера</button>
-              <button type="button" class="btn btn-outline-light wow fadeInDown">Найти клиента</button>
+              <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown">Найти клиента</button>
             </div>
 
           </div>
@@ -135,7 +135,7 @@
             <h4>Для этого необходимо нажать на соответствующую кнопку на сайте с надписью «Найти мастера»/«Найти клиента».</h4>
           </div>
 
-          <div class="col-12 col-md-12 col-lg-6 wow fadeInLeft" data-wow-duration="1s"">
+          <div class="col-12 col-md-12 col-lg-6 wow fadeInLeft redCar" data-wow-duration="1s"">
             <img src="img/carRepair.png" alt="car" width="100%">
           </div>
 
@@ -162,15 +162,15 @@
         </div>
 
         <div class="col-12 wow fadeInLeft mainText" data-wow-duration="3s"" style="margin-bottom: 20px;">
-          <form class="decor">
+          <form class="decor" action="techSupport.php" method="POST">
             <div class="form-left-decoration"></div>
             <div class="form-right-decoration"></div>
             <div class="circle"></div>
             <div class="form-inner">
               <h3 class="mainText" style="color: #0282C7; margin-bottom: 25px;">Написать нам</h3>
-              <input type="text" placeholder="Имя">
-              <input type="phone" placeholder="Номер">
-              <textarea placeholder="Сообщение..." rows="3"></textarea>
+              <input type="text" placeholder="Имя" name="name">
+              <input type="phone" placeholder="Номер" name="tel">
+              <textarea placeholder="Сообщение..." rows="3" name="problem"></textarea>
               <input type="submit" value="Отправить">
             </div>
           </form>
