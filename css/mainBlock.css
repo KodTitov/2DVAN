@@ -7,7 +7,7 @@
   padding-top: 30px;
   margin-bottom: 30px;
   font-family: 'Philosopher', sans-serif;
-  font-size: 45px;
+  font-size: 30px;
 }
   
 .textMain{
@@ -40,6 +40,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 600px;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
 }
 
 .icoVer{
