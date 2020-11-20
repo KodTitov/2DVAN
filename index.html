@@ -195,23 +195,23 @@
       <div class="popup">
         <img class="close-popup-client" src="img/close.png" alt="">
 
-         <form action="">
+         <form action="popupClient.php" method="POST">
           <h4>Заполните регистрационную форму</h4> <br>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Введите ваше имя">
+            <input type="text" class="form-control" placeholder="Введите ваше имя" name="name">
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Введите номер телефона">
+            <input type="tel" class="form-control" placeholder="Введите номер телефона" name="tel">
           </div>
 
           <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="Опишите Вашу проблему"></textarea>
+            <textarea class="form-control" rows="3" placeholder="Опишите Вашу проблему" name="problem"></textarea>
           </div>
 
           <div class="form-group">
             <label>Выберите категорию</label>
-            <select class="form-control">
+            <select class="form-control" name="category">
               <option>Проблемы в дороге</option>
               <option>Техническое обслуживание и диагностика</option>
               <option>Автоэлектрика</option>
@@ -235,8 +235,8 @@
 
           <div class="form-group">
             <label>Выберите способ работы с сервисом</label>
-            <select class="form-control">
-              <option>viber</option>
+            <select class="form-control" name="messanger">
+              <option>Viber</option>
               <option>Telegram</option>
             </select>
           </div>
