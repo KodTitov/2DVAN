@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/mainBlock.css">
     <link rel="stylesheet" href="css/techSupport.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
 
     <link rel="stylesheet" href="css/mediaScreenSize.css">
 
@@ -34,7 +35,7 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link wow backInLeft textNavBar" href="#info">Информация</a></li>
-          <li class="nav-item"><a class="nav-link wow backInRight textNavBar" href="#">Найти мастера</a></li>
+          <li class="nav-item open-popup-client"><a class="nav-link wow backInRight textNavBar" href="#">Найти мастера</a></li>
           <li class="nav-item"><a class="nav-link wow backInRight textNavBar" href="#">Найти клиента</a></li>
           <li class="nav-item"><a class="nav-link wow backInRight textNavBar" href="#techSupport">Тех.поддержка</a></li>
         </ul>
@@ -48,7 +49,7 @@
 
             <div class="col-12 logRegBanner">
               <h4 class="bannerText wow fadeInDown"><span style="font-size: 60px;">2DVAN</span><br>найдем клиентов/мастеров быстро и качественно для вас</h4>
-              <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown">Найти мастера</button>
+              <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown open-popup-client">Найти мастера</button>
               <button type="button" class="btn btn-outline-light wow fadeInDown">Найти клиента</button>
             </div>
 
@@ -142,14 +143,13 @@
             <p>
               <span style="font-size: 20px; font-weight: bold; color:#064EA3;">Готовы сотрудничать как мастер ?</span><br>
               Предоставте нам такие данные как: Резюме, Портфолио, Контактные данные, Выберите категории работ. <br><br>
-              <span style="font-size: 20px; font-weight: bold; color:#064EA3;">Готовы сотрудничать как клиент ?</span><br>
+              <a href="#" class="open-popup-client" style="font-size: 20px; font-weight: bold; color:#064EA3;">Готовы сотрудничать как клиент ?</a><br>
               Предоставте нам такие данные как: Контактные данные, выберите категорию работы, опишите проблему.<br>
-              <br>
-              Выберите способ работы с сервисом: Мессенджер которым вы пользуетесь.
-              Ожидайте ответа от бота в мессенджере.             
+              <br><br>
+              <span style="font-weight: bold; font-size: 17px;">Выберите способ работы с сервисом: Мессенджер которым вы пользуетесь.
+                Ожидайте ответа от бота в мессенджере. </span>            
             </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -191,12 +191,68 @@
       </div>
     </div>
 
+    <div class="popup-bg-client">
+      <div class="popup">
+        <img class="close-popup-client" src="img/close.png" alt="">
+
+         <form action="">
+          <h4>Заполните регистрационную форму</h4> <br>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Введите ваше имя">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Введите номер телефона">
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" rows="3" placeholder="Опишите Вашу проблему"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Выберите категорию</label>
+            <select class="form-control">
+              <option>Проблемы в дороге</option>
+              <option>Техническое обслуживание и диагностика</option>
+              <option>Автоэлектрика</option>
+              <option>Кузовные работы</option>
+              <option>Двигатель</option>
+              <option>Коробка переключений передач</option>
+              <option>Уход за салоном</option>
+              <option>Ремонт и замена автостекл</option>
+              <option>Ходовая часть</option>
+              <option>Рулевая система</option>
+              <option>Тормозная система</option>
+              <option>Выхлопная система</option>
+              <option>Шиномонтаж</option>
+              <option>Ремонт и обслуживание автокондиционеров</option>
+              <option>Установка ГБО</option>
+              <option>Ремонт мототехники</option>
+              <option>Автострахование</option>
+              <option>Другой ремонт авто</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Выберите способ работы с сервисом</label>
+            <select class="form-control">
+              <option>viber</option>
+              <option>Telegram</option>
+            </select>
+          </div>
+
+             <input value="Отправить заявку" type="submit">
+         </form>
+    
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="js/battonScroll.js"></script>
     <script src="js/anchorScroll.js"></script>
+    <script src="js/popup.js"></script>
     <script src="main.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
