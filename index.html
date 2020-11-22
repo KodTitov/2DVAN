@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <meta name="description" content="">
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/upBtn.css">
     <link rel="stylesheet" href="css/navbar.css">  
@@ -36,7 +38,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link wow backInLeft textNavBar" href="#info">Информация</a></li>
           <li class="nav-item open-popup-client"><a class="nav-link wow backInRight textNavBar" href="#">Найти мастера</a></li>
-          <li class="nav-item"><a class="nav-link wow backInRight textNavBar" href="#">Найти клиента</a></li>
+          <li class="nav-item open-popup-master"><a class="nav-link wow backInRight textNavBar" href="#">Найти клиента</a></li>
           <li class="nav-item"><a class="nav-link wow backInRight textNavBar" href="#techSupport">Тех.поддержка</a></li>
         </ul>
       </div>
@@ -48,9 +50,9 @@
           <div class="row text-center">
 
             <div class="col-12 logRegBanner">
-              <h4 class="bannerText wow fadeInDown"><span style="font-size: 60px;">2DVAN</span><br>найдем клиентов/мастеров быстро и качественно для вас</h4>
+              <h4 class="bannerText wow fadeInDown"><span style="font-size: 60px;">2DVAN</span><br>найдем клиентов/мастеров быстро и качественно для Вас</h4>
               <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown open-popup-client">Найти мастера</button>
-              <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown">Найти клиента</button>
+              <button type="button" class="btn btn-outline-light btnBannerReg wow fadeInDown open-popup-master">Найти клиента</button>
             </div>
 
           </div>
@@ -141,7 +143,7 @@
 
           <div class="col-12 col-md-12 col-lg-6 wow fadeInLeft" data-wow-duration="1s"">
             <p>
-              <span style="font-size: 20px; font-weight: bold; color:#064EA3;">Готовы сотрудничать как мастер ?</span><br>
+              <a href="#" class="open-popup-master" style="font-size: 20px; font-weight: bold; color:#064EA3;">Готовы сотрудничать как мастер ?</a><br>
               Предоставте нам такие данные как: Резюме, Портфолио, Контактные данные, Выберите категории работ. <br><br>
               <a href="#" class="open-popup-client" style="font-size: 20px; font-weight: bold; color:#064EA3;">Готовы сотрудничать как клиент ?</a><br>
               Предоставте нам такие данные как: Контактные данные, выберите категорию работы, опишите проблему.<br>
@@ -241,11 +243,80 @@
             </select>
           </div>
 
-             <input value="Отправить заявку" type="submit">
+             <input class="btnForm" value="Отправить заявку" type="submit">
          </form>
     
       </div>
     </div>
+
+
+    <div class="popup-bg-master">
+      <div class="popup">
+        <img class="close-popup-master" src="img/close.png" alt="">
+
+         <form action="popupMaster.php" method="POST" enctype="multipart/form-data">
+          <h4>Заполните регистрационную форму</h4> <br>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Введите ваше имя" name="name">
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-control" placeholder="Введите номер телефона" name="tel">
+          </div>
+
+          <div class="infoForMobilDefice">
+            <span>С данного устройства нет возможности добавить резюме и портфолио. Менеджер запросит его у Вас позже.</span>
+          </div>
+
+          <div class="form-group rezyme">
+              <label>Загрузите ваше резюме</label>
+              <input type="file" class="form-control-file" name="rezyme">
+          </div>
+
+          <div class="form-group rezyme">
+            <label>Загрузите ваше портфолио</label>
+            <input type="file" class="form-control-file" name="portfolio">
+        </div>
+
+          <div class="form-group">
+            <label>Выберите основную категорию (вы сможете дополнить в дальнейшем)</label>
+            <select class="form-control" name="category">
+              <option>Проблемы в дороге</option>
+              <option>Техническое обслуживание и диагностика</option>
+              <option>Автоэлектрика</option>
+              <option>Кузовные работы</option>
+              <option>Двигатель</option>
+              <option>Коробка переключений передач</option>
+              <option>Уход за салоном</option>
+              <option>Ремонт и замена автостекл</option>
+              <option>Ходовая часть</option>
+              <option>Рулевая система</option>
+              <option>Тормозная система</option>
+              <option>Выхлопная система</option>
+              <option>Шиномонтаж</option>
+              <option>Ремонт и обслуживание автокондиционеров</option>
+              <option>Установка ГБО</option>
+              <option>Ремонт мототехники</option>
+              <option>Автострахование</option>
+              <option>Другой ремонт авто</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Выберите способ работы с сервисом</label>
+            <select class="form-control" name="messanger">
+              <option>Viber</option>
+              <option>Telegram</option>
+            </select>
+          </div>
+
+          <input type="submit" class="btnForm" value="Отправить заявку">
+        </form>
+    
+      </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -253,7 +324,6 @@
     <script src="js/battonScroll.js"></script>
     <script src="js/anchorScroll.js"></script>
     <script src="js/popup.js"></script>
-    <script src="main.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     

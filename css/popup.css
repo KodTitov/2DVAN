@@ -26,15 +26,6 @@
     flex-direction: column;
 }
 
-
-
-.popup form input[type="submit"] {
-    background: #000000;
-    color: #ffffff;
-    font-size: 20px;
-    border-radius: 10px 10px;
-}
-
 .close-popup-client {
     position: absolute;
     top: 10px;
@@ -46,3 +37,41 @@
 .no-scroll {
     overflow-y: hidden;
 }
+
+.popup-bg-master {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+
+.close-popup-master {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.btnForm{
+    background: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px 10px;
+    width: 100%;
+}
+
+.infoForMobilDefice {
+    display: none;
+}
+
+#customFile .custom-file-control:lang(en)::after {
+    content: "Select file...";
+  }
+  
+  #customFile .custom-file-control:lang(en)::before {
+    content: "Click me";
+  }
