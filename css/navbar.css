@@ -22,3 +22,12 @@
 .textNavBar:focus:after {
     width: 100%;
 }
+
+.textNavBarDisabled {
+    font-family: 'Roboto', sans-serif;
+    height: 2px;
+    display: inline-block;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+}
