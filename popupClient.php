@@ -9,6 +9,7 @@ $tel = $_POST['tel'];
 $problem = $_POST['problem'];
 $category = $_POST['category'];
 $messanger = $_POST['messanger'];
+$city = $_POST['city'];
 
 $mail->isSMTP();                                  
 $mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
@@ -24,7 +25,7 @@ $mail->addAddress('2dvanmain@gmail.com');
 $mail->isHTML(true);                                
 
 $mail->Subject = 'Поиск мастера';
-$mail->Body    = 'Имя ' .$name . ' <br>Телефон ' .$tel. ' <br> Категория: ' .$category. '<br>Месенжер: ' .$messanger. '<br><br>Проблема: ' .$problem;
+$mail->Body    = 'Имя ' .$name . ' <br>Телефон ' .$tel. ' <br> Категория: ' .$category. '<br>Месенжер: ' .$messanger. '<br>город: ' .$city;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
