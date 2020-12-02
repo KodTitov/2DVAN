@@ -13,13 +13,13 @@ $city = $_POST['city'];
 $mail->isSMTP();                                  
 $mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               
-$mail->Username = '2dvanservice@gmail.com'; 
-$mail->Password = '2D1V1A1N'; 
+$mail->Username = 'mail'; 
+$mail->Password = 'password'; 
 $mail->SMTPSecure = 'ssl';                        
 $mail->Port = 465; 
 
-$mail->setFrom('2dvanservice@gmail.com'); 
-$mail->addAddress('2dvanmain@gmail.com');    
+$mail->setFrom('mail'); 
+$mail->addAddress('mail');    
 
 $mail->isHTML(true);                                
 
